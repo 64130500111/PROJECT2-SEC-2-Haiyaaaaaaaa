@@ -18,8 +18,8 @@ const isActive = (num) => {
   menuArr.value = getItems()[num].menu
 };
 
-const cart = (selectedItem) => {
-  cartItem.value = selectedItem
+const cart = (selectedItems) => {
+  cartItem.value = selectedItems
   console.log(cartItem)
 }
 </script>
@@ -73,7 +73,7 @@ const cart = (selectedItem) => {
                 v-for="(item, index) in items"
                 :key="index"
                 class="w-[89px] h-[130px] rounded-[59px] bg-white text-black shadow-xl font-['?????'] cursor-pointer"
-                :class="typeId === index ? 'bg-slate-900': 'bg-white'"
+                :class="typeId === index ? 'bg-black': 'bg-white'"
               >
                 <TypeSelect :item="item" :typeId="typeId" :index="index" @typeSelect="isActive" />
               </li>

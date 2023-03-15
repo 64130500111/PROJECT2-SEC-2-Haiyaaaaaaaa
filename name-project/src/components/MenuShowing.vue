@@ -16,9 +16,9 @@ const emits = defineEmits(['selectedFood'])
     {{ menu.name }}
 </div>
 <div class="flex flex-row">
-     <div class="w-full flex justify-center mt-7">
+    <div class="w-full flex justify-center mt-7">
         <p class="font-['Baloo'] text-lg">{{ menu.price }}฿</p>
-         </div>
+    </div>
     <div class="w-full">
          <input type="checkbox" :id="menu.id" :value="menu" 
          class="checkbox checkbox-success checkbox-md ml-8 mt-7" 
@@ -28,5 +28,4 @@ const emits = defineEmits(['selectedFood'])
 </template>
  
 <style scoped>
-
 </style>
