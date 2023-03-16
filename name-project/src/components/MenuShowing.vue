@@ -22,7 +22,7 @@ const emits = defineEmits(['selectedFood'])
     <div class="w-full">
          <input type="checkbox" :id="menu.id" :value="menu" 
          class="checkbox checkbox-success checkbox-md ml-8 mt-7" 
-        @click="$emit('selectedFood',menu)"/>
+        @change="$emit('selectedFood',menu)"/>
     </div>
 </div>
 </template>
